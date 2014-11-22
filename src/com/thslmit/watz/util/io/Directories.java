@@ -7,12 +7,13 @@ import java.util.logging.Logger;
 import java.util.prefs.Preferences;
 
 public class Directories {
+	
 	private static final Logger log = Logger.getLogger(Files.class.getName());
     private static final Preferences pref = Preferences.userNodeForPackage(Files.class);
 	private static final String APP_DIR_PREF = "APP_DIR";
     private static final String TMP_DIR_PREF = "TMP_DIR";
     
-    // TODO: Consider file type formats for the system and appen
+    // TODO: Consider file type formats for the system and append proper files
     private static final String app_dir = pref.get(APP_DIR_PREF, System.getProperty("user.home")+separator+".rc");
     private static final String tmp_dir = pref.get(TMP_DIR_PREF, System.getProperty("java.io.tmpdir")+separator + "routeconverter" + (!isWindows() ? "-" + System.getProperty("user.name") : ""));
     
