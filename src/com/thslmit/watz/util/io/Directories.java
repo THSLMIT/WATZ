@@ -1,10 +1,11 @@
 package com.thslmit.watz.util.io;
 
-import static java.io.File.separator;
-
 import java.io.File;
 import java.util.logging.Logger;
 import java.util.prefs.Preferences;
+
+import static java.io.File.separator;
+import static com.thslmit.watz.util.sys.Platform.isWindows;
 
 public class Directories {
 	

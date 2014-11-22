@@ -10,11 +10,6 @@ import java.io.Writer;
 import static org.apache.commons.io.IOUtils.closeQuietly;
 import static org.apache.commons.io.IOUtils.copyLarge;
 
-/* 
- * TODO: Implement the Apache commons library for
- * pipeline processing of files.
- */
-
 public class IO {
 	public static final int DEFAULT_BUFFER_SIZE = 1024 * 4;
 	

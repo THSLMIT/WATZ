@@ -51,7 +51,7 @@ public class Externalization {
 		File target = getTempFile(filename.replace(".", "_" + tfix + "."));
 		log.info("Extracting " + filename + " to " + target);
 
-		Reader r = new TokenReplaceReader(); // Implement TokenRepalceReader files
+		Reader r = new TokenReplaceReader(new InputStreamReader(in), tr); // Implement TokenRepalceReader files
 		FileWriter w = new FileWriter(target);
 		IO.copy(r, w);
 		return target;
