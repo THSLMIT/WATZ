@@ -5,7 +5,7 @@ import java.io.PushbackReader;
 import java.io.Reader;
 import java.nio.CharBuffer;
 
-public class TokenReplaceReader {
+public class TokenReplaceReader extends Reader {
 	
 	private PushbackReader pbReader;
 	private TokenResolver tr;
